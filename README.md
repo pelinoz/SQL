@@ -99,7 +99,3 @@ DELETE FROM employee
 WHERE id = 50;
 ```
 
-## Kullanım
-
-- Yukarıdaki sorguları, ilgili güncelleme veya silme işlemlerini gerçekleştirmek için veritabanınızda çalıştırabilirsiniz.
-- Sorgulardaki değerleri (örneğin, name, birthday, email, id) kendi ihtiyaçlarınıza göre değiştirebilirsiniz.
