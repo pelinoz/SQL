@@ -1,26 +1,26 @@
 
-# Employee Table SQL Operations
+# Employee Tablosu SQL İşlemleri
 
-This README provides SQL operations for an employee table in a relational database.
+Bu README, bir veritabanındaki employee tablosu için SQL işlemlerini içermektedir.
 
-## Table Structure
+## Tablo Yapısı
 
-The `employee` table has the following structure:
+`employee` tablosunun yapısı şu şekildedir:
 
-| Column Name | Data Type   |
-|-------------|-------------|
-| id          | INTEGER     |
-| name        | VARCHAR(50) |
-| birthday    | DATE        |
-| email       | VARCHAR(100)|
+| Sütun Adı  | Veri Tipi    |
+|------------|--------------|
+| id         | INTEGER      |
+| name       | VARCHAR(50)  |
+| birthday   | DATE         |
+| email      | VARCHAR(100) |
 
-## SQL Operations
+## SQL İşlemleri
 
-### 1. Update Operations
+### 1. Güncelleme İşlemleri
 
-The following SQL queries update records in the `employee` table:
+`employee` tablosundaki kayıtları güncellemek için kullanılan SQL sorguları:
 
-#### Update Name by ID
+#### ID'ye Göre Name Güncelleme
 
 ```sql
 UPDATE employee
@@ -28,7 +28,7 @@ SET name = 'Updated Name'
 WHERE id = 1;
 ```
 
-#### Update Email by Name
+#### Name'e Göre Email Güncelleme
 
 ```sql
 UPDATE employee
@@ -36,7 +36,7 @@ SET email = 'updatedemail@example.com'
 WHERE name = 'Alice Johnson';
 ```
 
-#### Update Name by Birthday
+#### Birthday'e Göre Name Güncelleme
 
 ```sql
 UPDATE employee
@@ -44,7 +44,7 @@ SET name = 'Birthday Update'
 WHERE birthday = '1985-05-23';
 ```
 
-#### Update Birthday by Email
+#### Email'e Göre Birthday Güncelleme
 
 ```sql
 UPDATE employee
@@ -52,7 +52,7 @@ SET birthday = '2000-01-01'
 WHERE email = 'johndoe@example.com';
 ```
 
-#### Update Email by ID
+#### ID'ye Göre Email Güncelleme
 
 ```sql
 UPDATE employee
@@ -60,46 +60,46 @@ SET email = 'anotherupdate@example.com'
 WHERE id = 50;
 ```
 
-### 2. Delete Operations
+### 2. Silme İşlemleri
 
-The following SQL queries delete records from the `employee` table:
+`employee` tablosundaki kayıtları silmek için kullanılan SQL sorguları:
 
-#### Delete by ID
+#### ID'ye Göre Silme
 
 ```sql
 DELETE FROM employee
 WHERE id = 2;
 ```
 
-#### Delete by Name
+#### Name'e Göre Silme
 
 ```sql
 DELETE FROM employee
 WHERE name = 'Jane Smith';
 ```
 
-#### Delete by Birthday
+#### Birthday'e Göre Silme
 
 ```sql
 DELETE FROM employee
 WHERE birthday = '1992-07-14';
 ```
 
-#### Delete by Email
+#### Email'e Göre Silme
 
 ```sql
 DELETE FROM employee
 WHERE email = 'alicejohnson@example.com';
 ```
 
-#### Delete by ID
+#### ID'ye Göre Silme
 
 ```sql
 DELETE FROM employee
 WHERE id = 50;
 ```
 
-## Usage
+## Kullanım
 
-- Run the above queries on your database system to perform the respective update or delete operations.
-- Replace the values in the queries (such as name, birthday, email, id) to fit your specific needs.
+- Yukarıdaki sorguları, ilgili güncelleme veya silme işlemlerini gerçekleştirmek için veritabanınızda çalıştırabilirsiniz.
+- Sorgulardaki değerleri (örneğin, name, birthday, email, id) kendi ihtiyaçlarınıza göre değiştirebilirsiniz.
