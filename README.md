@@ -65,7 +65,6 @@ DELETE FROM employee
 WHERE id = 2;
 ```
 
-#### Name'e Göre Silme
 
 ```sql
 DELETE FROM employee
